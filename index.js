@@ -26,14 +26,6 @@ Se vitórias for maior ou igual a 101 = Imortal
 
 Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
-
-let saldoDeVitorias = result(4, 5)
-console.log("O Herói tem de saldo de " + saldoDeVitorias + " vitorias e está no nível ");
-
-function result(vitorias, derrotas) {
-  let saldoDeVitorias = vitorias - derrotas;
-  return saldoDeVitorias;
-}
 */
 
 
@@ -62,6 +54,6 @@ function calcularNivel(vitorias, derrotas) {
   return { saldoVitorias, nivel };
 }
 
-const resultado = calcularNivel(65, 20);
-console.log(`O Herói tem um saldo de ${resultado.saldoVitorias} vitórias e está no nível de ${resultado.nivel}`);
+let resultado = calcularNivel(65, 20);
+console.log("O Herói tem um saldo de " + resultado.saldoVitorias + " e está no nível de " + resultado.nivel + ".");
 
